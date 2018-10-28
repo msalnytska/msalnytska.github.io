@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <title>Myform</title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+    <body>
+<h1>Do you want to make your life better?</h1>
+<form action="" method="POST" name="personalInfo">
+  <fieldset>
+    <legend>Personal information</legend>
+
+          <div class="name">
+          <label>
+            <span class="old">How old are You?</span>
+          </div>
+            <br>
+            <div class="input-name">
+               <input
+             type="number"
+             name="old"
+             size="3"
+             min="18"
+             max="30"
+             required/>
+          </label>
+        </div>
+
+    <br>
+    <div class="name">
+    <label>
+      <span>Surname:</span>
+    </div>
+      <br>
+      <div class="input-name">
+      <input type="text" name="surname" required/>
+      </label>
+    <br>
+    <div class="name">
+    <label>
+      <span>Name:</span>
+    </div>
+      <br>
+      <div class="input-name">
+      <input type="text" name="name" required/>
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Registration</legend>
+    <label >
+      <span>E-mail:</span>
+      <br>
+      <input type="email" name="email" required/>
+    </label>
+  </div>
+    <br>
+ 
+    <label>
+      <span>Password:</span>
+      <br>
+      <input
+             type="password"
+             name="password"
+             autocomplete="new-password"
+             required/>
+    </label>
+ 
+
+  </fieldset>
+  <fieldset>
+    <legend>An interesting facts about you?</legend>
+    <div>
+      <div class="question">So, do you like cats?</div>
+      <div>
+        <label>
+          <input
+                 type="radio"
+                 name="cats"
+                 value="yes"
+                 required/>
+          <span>Yes</span>
+        </label>
+        <label>
+          <input
+                 type="radio"
+                 name="cats"
+                 value="no"
+                 required/>
+          <span>No</span>
+        </label>
+      </div>
+    </div>
+    <div>
+      <div class="question">Like this color</div>
+      <label>
+        <input
+               type="color"
+               name="favouriteColor"
+               value="#999900"
+               required/>
+      </label>
+    </div>
+    <div>
+      <div class="question">And what time do you go on vacation?</div>
+      <label>
+        <input
+               type="month"
+               name="vacationTime"
+               required/>
+      </label>
+    </div>
+    <div>
+     <div class="question">Verdict about cars</div>
+      <label>
+        <select
+                multiple
+                name="verb"
+                size="1"
+                required>
+          <option value="" selected>BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+          <option value="Nissan">Nissan</option>
+          <option value="Ford">Ford</option>
+        </select>
+      </label>
+    </div>
+      <div class="question">Evel or Angel</div>
+      <div>
+      <label>
+        <input
+               type="range"
+               name="workRate"
+               value="1"
+               min="0"
+               max="10"/>
+      </label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>About you:</legend>
+    
+       <textarea 
+               name="comments" 
+               rows ="5"
+               colls= "500">
+    I can do anything
+    </textarea>
+   
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
+</body>
