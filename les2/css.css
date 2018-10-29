@@ -1,0 +1,32 @@
+
+     html {
+      font-family: sans-serif;
+    }
+.november {
+  color: #0093CA;
+  text-align:center;
+}
+.tnovember {
+  text-align:center;
+}
+.days {
+  color:black;
+  font-weight:bold;
+}
+.workhard {
+  color:black;
+}
+.workhard:hover{
+  cursor:pointer;
+  background:black;
+  color:white;
+}
+.playhard {
+  color:red;
+}
+.playhard:hover{
+  cursor:pointer;
+  background:pink;
+  color:white;
+}
+
