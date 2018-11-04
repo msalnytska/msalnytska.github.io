@@ -1,0 +1,51 @@
+
+.vision{
+	max-width: 30%;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	text-align: center;
+
+}
+
+
+.view1{
+	font-size: 13vw;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+.view2{
+	font-size: 7.5vw;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.view3{
+	font-size: 5vw;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.view4 {
+	font-size: 4vw;
+	display: flex;
+	justify-content: space-between;
+
+}
+.view5{font-size: 2vw;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	
+}
+.view6{
+	font-size: 1vw;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+	
+}
