@@ -17,11 +17,11 @@
                 <img class="logo" src="img/logo.png" alt="Fitness"/>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#page">Page</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
                 <div class="registration">
@@ -37,13 +37,11 @@
                 <h5> The year has just started, you should start with us </h5>
                 <button class="get" type="button" data-toggle="modal" data-target="#exampleModalCenter">get in touch</button>
             </div>
-            <div class="header__secondary">
-                <p class="header-text">free 7 days</p>
-                <p class="header-text__main">online booking</p>
-            </div>
+          
         </div>
     </header>
     <section class="welcome">
+        <a id="about"></a>
         <div class="wrapper">
             <div class="welcome__info">
                 <h3> welcome to <p class="colored"> fitness</p></h3>
@@ -57,6 +55,7 @@
             </div>
     </section>
     <section class="services">
+        <a id="page"></a>
         <div class="wrapper">
             <div class="services__info">
                 <h3> welcome to <p class="colored"> fitness</p></h3>
@@ -94,6 +93,7 @@
         </div>
     </section>
     <section class="trainers">
+        <a id="blog"></a>
         <div class="wrapper">
             <div class="trainers__info">
                 <h3> expert <p class="colored"> trainers</p></h3>
@@ -121,6 +121,7 @@
             </div>
     </section>
     <section class="try">
+        <a id="contacts"></a>
         <div class="try__items">
             <div class="try__free" style="background-image: url(img/try.png)" ;>
                 <div class="try__info">
@@ -148,14 +149,14 @@
                         <li>
                             <p class="text-secondary">Follow Us: </p>
                         </li>
-                        <li><a class="footer__social-list__item" href="#"><i class=" fab fa-facebook-f"></i></a></li>
-                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="footer__social-list__item" href="#"><i class="fas fa-basketball-ball"></i></a></li>
-                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-tumblr"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class=" fab fa-facebook-f" aria-label="fb"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-instagram" aria-label="instagram"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-pinterest-p" aria-label="pinterest"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-google-plus-g" aria-label="g+"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-youtube" aria-label="youtube"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class="fas fa-basketball-ball" aria-label="ball"></i></a></li>
+                        <li><a class="footer__social-list__item" href="#"><i class="fab fa-tumblr" aria-label="tumblr"></i></a></li>
                     </ul>
                     <form class="needs-validation" novalidate>
                         <input type="email" class="form-control " id="input-email" placeholder="your e-mail" required>
@@ -210,11 +211,11 @@
        <h5>FOR 7 DAYS</h5>
        <h4>ONLINE BOOKING</h4>
        <form style="margin-top:10px;">
-       	<input type="name" class="form-control " id="input-name" placeholder="your name">
-        <input type="email" class="form-control " id="input-email" placeholder="your e-mail" required>
-         <input class="form-control" type="tel" value="your phone number" id="example-tel-input" required>
-         <input class="form-control" type="date" value="2019-01-01" id="example-date-input" required>
-         <input class="form-control" type="time" value="13:00:00" id="example-time-input" required>
+       	<input type="name" class="form-control " id="input-name" placeholder="your name" aria-label="name">
+        <input type="email" class="form-control " id="input-email" placeholder="your e-mail" aria-label="email" required>
+         <input class="form-control" type="tel" value="your phone number" id="example-tel-input" aria-label="phone" required>
+         <input class="form-control" type="date" value="2019-01-01" id="example-date-input" aria-label="date" required>
+         <input class="form-control" type="time" value="13:00:00" id="example-time-input" aria-label="time" required>
 
          <button type="submit" >Submit</button>
 
