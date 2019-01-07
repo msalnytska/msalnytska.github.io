@@ -1,0 +1,220 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+header {
+    position: relative;
+    background: no-repeat center / cover;
+    min-height: 100vh;
+}
+
+.header-navigation ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 47%;
+    left: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+
+}
+
+.header-navigation ul li {
+    margin-right: 50px;
+}
+
+.header-navigation ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.header-navigation ul li a:hover {
+    color: white;
+}
+
+.about {
+    background: #e6e6e6;
+    height: 700px;
+}
+
+.about h1 {
+
+    font-size: 80px;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.about__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__box__me {
+    width: 450px;
+    margin-top: 100px;
+    font-family: monospace;
+    font-size: 20px;
+
+}
+
+.about__box__me ul {
+    list-style-type: square;
+
+}
+
+.about__box__me button {
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 15px;
+    width: 120px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    margin-top: 50px;
+}
+.downloadCV a{
+    display: block;
+    width: 120px;
+    padding: 15px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+.downloadCV a:hover {
+text-decoration: underline;
+ color: black;
+}
+
+.downloadCV,
+.EmailMe {
+    width: 120px;
+}
+
+.about__box__photo {
+    margin-top: 100px;
+    border: 1px solid black;
+    width: 400px;
+    height: 335px;
+    font-size: 40px;
+    font-family: monospace;
+    padding: 30px;
+}
+
+.portfolio {
+    background: white;
+    height: 900px;
+}
+
+.portfolio__items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 400px 400px;
+    grid-gap: 100px;
+}
+
+.portfolio__items__item-1 {
+    background: url("img/elena.jpg") center no-repeat / cover;
+}
+
+.portfolio__items__item-1:hover {
+    background: url("img/elenacolor.jpg") center no-repeat / cover;
+}
+
+.portfolio__items__item-2 {
+    background: url("img/dsgn.jpg") center no-repeat / cover;
+}
+
+.portfolio__items__item-2:hover {
+    background: url("img/dsgncolor.jpg") center no-repeat / cover;
+}
+
+.portfolio__items__item-3 {
+    background: url("img/fitness.jpg") center no-repeat / cover;
+}
+
+.portfolio__items__item-3:hover {
+    background: url("img/fitnesscolor.jpg") center no-repeat / cover;
+}
+
+.portfolio__items__item-4 {
+    background: url("img/startup.jpg") center no-repeat / cover;
+}
+
+.portfolio__items__item-4:hover {
+    background: url("img/startupcolor.jpg") center no-repeat / cover;
+}
+
+.portfolio__items a {
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+.contact {
+    background: #1F1D1E;
+    height: 250px;
+    position: relative;
+}
+.contact ul{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    font-size: 50px;
+    justify-content: space-around;
+    padding-top: 30px;
+   
+
+}
+
+.contact__social-list__item .fab {
+    color:white;
+}
+.contact__social-list__item  .fab:hover{
+    color: pink;
+    cursor: pointer;
+}
+.mylogo{
+    position: absolute;
+    bottom: 20px;
+    left: 47%;
+    
+
+}
+.modal button {
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 15px;
+    width: 120px;
+
+}
+.modal input {
+border: 1px solid black;
+}
+.modal textarea{
+    margin-top: 30px;
+    border: 1px solid black;
+}
