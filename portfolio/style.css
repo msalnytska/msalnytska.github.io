@@ -238,6 +238,9 @@ border: 1px solid black;
     text-align: center;
     margin: 0 auto;
 }
+.about__box{
+   height: 100vh;
+}
 .about__box,
 .buttons {
     display: flex;
