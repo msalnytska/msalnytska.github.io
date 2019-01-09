@@ -545,7 +545,7 @@ footer {
 
 #close_calendar {
     display: block;
-    background-color: #ff3333;
+    background-color: #c0301c;
     padding: 5px;
     outline: none;
     color: white;
@@ -648,24 +648,27 @@ footer {
   width: 100%;
   font-family: RobotoSlab Regular, sans-serif;
   line-height: 1em;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   padding-bottom: 30px;
 }
 #calendar2 thead tr:last-child {
   font-size: 20px;
   color: #777777;
+  padding-bottom: 30px;
 }
 #calendar2 thead tr:nth-child(1) td:nth-child(2) {
   color: #c0301c;
+  font-weight: bold;
   padding-bottom: 20px;
+
 }
 #calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
   cursor: pointer;
 }
 #calendar2 tbody td {
   color: black;
-  padding:5px;
+  padding: 10px 5px;
 }
 #calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
   color: #c0301c;
