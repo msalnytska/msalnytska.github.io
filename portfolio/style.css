@@ -132,20 +132,15 @@ text-decoration: none;
     grid-template-columns: 400px 400px;
     grid-gap: 100px;
 }
-.portfolio__items__item-1:before{
-    content: "wait.";
-}
-
 
 .portfolio__items__item-1 {
-    background: url("img/elena.jpg") center no-repeat / cover;
     border: 1px solid black;
+    background: transparent url("img/elena.jpg") center no-repeat / cover;
 }
 
 .portfolio__items__item-1:hover {
     background: url("img/elenacolor.jpg") center no-repeat / cover;
 }
-
 .portfolio__items__item-2 {
     background: url("img/dsgn.jpg") center no-repeat / cover;
     border: 1px solid black;
