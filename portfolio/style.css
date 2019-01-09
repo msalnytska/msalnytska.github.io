@@ -135,6 +135,7 @@ text-decoration: none;
 
 .portfolio__items__item-1 {
     background: url("img/elena.jpg") center no-repeat / cover;
+    border: 1px solid black;
 }
 
 .portfolio__items__item-1:hover {
@@ -143,6 +144,7 @@ text-decoration: none;
 
 .portfolio__items__item-2 {
     background: url("img/dsgn.jpg") center no-repeat / cover;
+    border: 1px solid black;
 }
 
 .portfolio__items__item-2:hover {
@@ -151,14 +153,17 @@ text-decoration: none;
 
 .portfolio__items__item-3 {
     background: url("img/fitness.jpg") center no-repeat / cover;
+    border: 1px solid black;
 }
 
 .portfolio__items__item-3:hover {
     background: url("img/fitnesscolor.jpg") center no-repeat / cover;
+
 }
 
 .portfolio__items__item-4 {
     background: url("img/startup.jpg") center no-repeat / cover;
+    border: 1px solid black;
 }
 
 .portfolio__items__item-4:hover {
