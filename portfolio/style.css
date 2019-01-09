@@ -16,6 +16,7 @@ header {
     position: relative;
     background: no-repeat center / cover;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .header-navigation ul {
@@ -222,66 +223,4 @@ border: 1px solid black;
 .modal textarea{
     margin-top: 30px;
     border: 1px solid black;
-}
-
-@media screen and (max-width:600px) {
-    .wrapper {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.header-navigation ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    height: 50vh;
-    justify-content: space-around;
-
-}
-.about h1{
-    font-size: 30px;
-    text-align: center;
-    margin: 0 auto;
-}
-.about__box{
-   height: 100vh;
-}
-.about__box,
-.buttons {
-    display: flex;
-    flex-direction: column; 
-
-}
-.EmailMe{
-    margin-top: 20px;
-}
-.about__box__me {
-    width: 300px;
-    font-size: 14px;
-    margin: 0 auto;
-}
-.about__box__photo {
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    margin: 20px 0 0 70px;
-}
-.portfolio {
-    background: black;
-    height: 1300px;
-}
-.portfolio__items {
-    display: grid;
-    grid-template-rows: 300px 300px 300px 300px;
-    grid-template-columns: 300px;
-    grid-gap: 10px;
-    margin: 10px;
-}
-.contact ul{
-    width: 200px;
-    font-size: 25px;
-    margin:0 auto;
-    flex-direction: column;
-
-}
 }
