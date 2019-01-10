@@ -521,7 +521,8 @@ footer {
 
 /*calendar*/
 #modal {
-    width: 500px;
+    width: auto;
+    height: auto;
     background-color: white;
     max-height: 80vh;
     border: 1px solid #e6e6e6;
@@ -540,11 +541,10 @@ footer {
 
 #modalcontentwrap {
     height: 120px;
-    text-overflow: fade;
+    text-overflow: hidden;
 }
 
 #close_calendar {
-    display: block;
     background-color: #c0301c;
     padding: 5px;
     outline: none;
@@ -553,6 +553,9 @@ footer {
     cursor: pointer;
     border: 1px solid #ff2f2f;
     margin: 0 auto;
+    position: absolute;
+    bottom:0;
+    right: 0;
 
   
 }
@@ -641,26 +644,24 @@ footer {
 }
 }
 
-
-
-
 #calendar2 {
   width: 100%;
   font-family: RobotoSlab Regular, sans-serif;
   line-height: 1em;
   font-size: 20px;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 20px;
+
 }
 #calendar2 thead tr:last-child {
   font-size: 20px;
   color: #777777;
-  padding-bottom: 30px;
 }
 #calendar2 thead tr:nth-child(1) td:nth-child(2) {
   color: #c0301c;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  
 
 }
 #calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
@@ -668,7 +669,7 @@ footer {
 }
 #calendar2 tbody td {
   color: black;
-  padding: 10px 5px;
+  padding: 20px 20px 20px 20px;
 }
 #calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
   color: #c0301c;
