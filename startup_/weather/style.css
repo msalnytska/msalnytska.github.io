@@ -136,20 +136,7 @@ h1 {
   font-weight: bold;
 }
 
-.signature {
-  position: fixed;
-  font-family: sans-serif;
-  font-weight: 100;
-  bottom: 10px;
-  left: 0;
-  letter-spacing: 4px;
-  font-size: 10px;
-  width: 100vw;
-  text-align: center;
-  color: #c0301c;
-  text-transform: uppercase;
-  text-decoration: none;
-}
+
 @media screen and (max-width:450px) {
   .title,
   .switch-button,
