@@ -1,9 +1,13 @@
-html,
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    min-height: 100%;
+   max-width: 1500px;
+   
 }
 
 .wrapper {
@@ -13,10 +17,9 @@ body {
 
 
 header {
-    position: relative;
-    background: no-repeat center / cover;
-    min-height: 100vh;
-    min-width: 100vw;
+     background:url("img/pcblur.jpg") no-repeat center / cover; 
+     position: relative;
+     height: 800px;
 }
 
 .header-navigation ul {
@@ -49,13 +52,30 @@ header {
     height: 700px;
 }
 
-.about h1 {
 
-    font-size: 80px;
+.about h1{
     font-family: monospace;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 2px solid black;
+    font-size: 80px;
     text-align: center;
-    padding-top: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 500px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
 }
 
 .about__box {
@@ -126,49 +146,66 @@ text-decoration: none;
     margin-top: 100px;
     display: grid;
     grid-template-rows: 350px 350px;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 350px 350px;
     grid-gap: 100px;
 }
 
 .portfolio__items__item-1 {
     border: 1px solid black;
-    background: transparent url("img/elena.jpg") center no-repeat / cover;
+    background: transparent url("img/tattoo.png") center no-repeat / cover;
+   
 }
 
 .portfolio__items__item-1:hover {
-    background: url("img/elenacolor.jpg") center no-repeat / cover;
+    background: url("img/tattoocolor.png") center no-repeat / cover;
+     transition: 1s;
 }
 .portfolio__items__item-2 {
-    background: url("img/dsgn.jpg") center no-repeat / cover;
+    background: url("img/dsgn.png") center no-repeat / cover;
     border: 1px solid black;
 }
 
 .portfolio__items__item-2:hover {
-    background: url("img/dsgncolor.jpg") center no-repeat / cover;
+    background: url("img/dsgncolor.png") center no-repeat / cover;
+    transition: 1s;
 }
 
 .portfolio__items__item-3 {
-    background: url("img/fitness.jpg") center no-repeat / cover;
+    background: url("img/fitness.png") center no-repeat / cover;
     border: 1px solid black;
 }
 
 .portfolio__items__item-3:hover {
-    background: url("img/fitnesscolor.jpg") center no-repeat / cover;
+    background: url("img/fitnesscolor.png") center no-repeat / cover;
+    transition: 1s;
 
 }
 
 .portfolio__items__item-4 {
-    background: url("img/startup.jpg") center no-repeat / cover;
+    background: url("img/startup.png") center no-repeat / cover;
     border: 1px solid black;
 }
 
 .portfolio__items__item-4:hover {
-    background: url("img/startupcolor.jpg") center no-repeat / cover;
+    background: url("img/startupcolor.png") center no-repeat / cover;
+    transition: 1s;
 }
+.portfolio__items__item-1,
+.portfolio__items__item-2,
+.portfolio__items__item-3,
+.portfolio__items__item-4{
+    box-shadow: 0 0 10px black;
+    padding: 0;
+    margin: 0;
+    width: 351px;
+    height: 352px;
+
+}
+
 
 .portfolio__items a {
     position: absolute;
-    width: 400px;
+    width: 350px;
     height: 350px;
     cursor: pointer;
     z-index: 1;
