@@ -10,68 +10,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-
 <div class="container">
-  <div class="title">
-    <h1 id="city"></h1>
-    <div id="graphic" class="weather-icon"></div>
-    <div id="description" class='important-info text'></div>
-    <div id="farenheit" class="temp-info"></div>
-    <div id="celsius" class="temp-info"></div>
-  </div>
+    <div class="title">
+        <h1 id="city"></h1>
+        <div id="graphic" class="weather-icon"></div>
+        <div id="description" class='important-info text'></div>
+        <div id="farenheit" class="temp-info"></div>
+        <div id="celsius" class="temp-info"></div>
+    </div>
 </div>
 <div class="description-container">
-  <div class="block-1">
-    <div class="text">
-      <span>Max</span>
-      <span id="max" class="important-info"> </span>
+    <div class="block-1">
+        <div class="text">
+            <span>Max</span>
+            <span id="max" class="important-info"> </span>
+        </div>
+        <div class="text">
+            <span>Min</span>
+            <span id="min" class='important-info'> </span>
+        </div>
     </div>
-    <div class="text">
-      <span>Min</span>
-    <span id="min" class='important-info'> </span>
+    <div class="block-2">
+        <div id="longitude" class=" text important-info">Lon: </div>
+        <div id="latitude" class="text important-info">Lat: </div>
     </div>
-    
-  </div>
-  <div class="block-2">
-    <div id="longitude" class=" text important-info">Lon: </div>
-    <div id="latitude" class="text important-info">Lat: </div>
-  </div>
-  <div class="block-3">
-    <div id="humidity" class="text important-info">Humidity: </div>
-    <div id="pressure" class="text important-info">Pressure: </div>
-    <div id="windSpeed" class="text important-info">Winds: </div>
-  </div>
+    <div class="block-3">
+        <div id="humidity" class="text important-info">Humidity: </div>
+        <div id="pressure" class="text important-info">Pressure: </div>
+        <div id="windSpeed" class="text important-info">Winds: </div>
+    </div>
 </div>
-
 <div class="container-button">
-      <div class="switch-button">
+    <div class="switch-button">
         <span class="active"></span>
         <button class="text switch-button-case left active-case">Celsius</button>
         <button class="text switch-button-case right">Farenheit</button>
-      </div>
+    </div>
 </div>
 <script type="text/javascript">
-
 var lat,
-  lon,
-  tWeather,
-  icon,
-  celsius,
-  farenheit,
-  iconNumber,
-  minCelsius,
-  maxCelsius,
-  minF,
-  maxF;
-
-  
-$.getJSON('https://ipapi.co/json/', function(data){
-  console.log(data);
+    lon,
+    tWeather,
+    icon,
+    celsius,
+    farenheit,
+    iconNumber,
+    minCelsius,
+    maxCelsius,
+    minF,
+    maxF;
 
 
+$.getJSON('https://ipapi.co/json/', function(data) {
+    console.log(data);
 
 
-console.log(data);
+
+
+    console.log(data);
 
     $.each(data, function(k, v) {});
     lat = data.latitude;
@@ -81,37 +77,37 @@ console.log(data);
     $("#longitude").append(lon);
 
     $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=059dcee9c15c93a942eb1f38b72876be", function(weatherData) {
-      $.each(weatherData, function(j, b) {});
-      console.log(weatherData);
-  
-      tWeather = weatherData.main.temp;
-      iconNumber = weatherData.weather[0].icon;
+        $.each(weatherData, function(j, b) {});
+        console.log(weatherData);
 
-      icon = ("http://openweathermap.org/img/w/" + iconNumber + ".png");
-      $("#graphic").append('<img src="' + icon + '"/>');
+        tWeather = weatherData.main.temp;
+        iconNumber = weatherData.weather[0].icon;
 
-      $('#description').append(weatherData.weather[0].description);
-      $('#city').append(weatherData.name);
-      $("#windSpeed").append(weatherData.wind.speed + "km/h");
-      $("#pressure").append(weatherData.main.pressure + "º");
-      $("#humidity").append(weatherData.main.humidity + "%");
-      minF = Math.floor(weatherData.main.temp_min * 9/5 - 459.67);
-      maxF = Math.floor(weatherData.main.temp_max * 9/5 - 459.67);
+        icon = ("http://openweathermap.org/img/w/" + iconNumber + ".png");
+        $("#graphic").append('<img src="' + icon + '"/>');
 
-    
-      celsius = Math.floor(weatherData.main.temp - 273.15);
+        $('#description').append(weatherData.weather[0].description);
+        $('#city').append(weatherData.name);
+        $("#windSpeed").append(weatherData.wind.speed + "km/h");
+        $("#pressure").append(weatherData.main.pressure + "º");
+        $("#humidity").append(weatherData.main.humidity + "%");
+        minF = Math.floor(weatherData.main.temp_min * 9 / 5 - 459.67);
+        maxF = Math.floor(weatherData.main.temp_max * 9 / 5 - 459.67);
 
-      minCelsius = Math.floor(weatherData.main.temp_min - 273.15);
-      maxCelsius = Math.floor(weatherData.main.temp_max - 273.15);
-    
-      farenheit = Math.floor(weatherData.main.temp * 9 / 5 - 459.67);
 
- 
-      $('#celsius').append(celsius + 'ºC');
-      $("#min").append( minCelsius + 'ºC');
-      $("#max").append( maxCelsius + 'ºC');
+        celsius = Math.floor(weatherData.main.temp - 273.15);
+
+        minCelsius = Math.floor(weatherData.main.temp_min - 273.15);
+        maxCelsius = Math.floor(weatherData.main.temp_max - 273.15);
+
+        farenheit = Math.floor(weatherData.main.temp * 9 / 5 - 459.67);
+
+
+        $('#celsius').append(celsius + 'ºC');
+        $("#min").append(minCelsius + 'ºC');
+        $("#max").append(maxCelsius + 'ºC');
     });
-  
+
 
 
 });
@@ -123,41 +119,41 @@ var switchBtnLeft = document.querySelector('.switch-button-case.left');
 var activeSwitch = document.querySelector('.active');
 
 function switchLeft() {
-  switchBtnRight.classList.remove('active-case');
-  switchBtnLeft.classList.add('active-case');
-  activeSwitch.style.left = '0%';
-  
-  $('#farenheit').empty();
-  $('#min').empty();
-  $('#max').empty();
-  $('#celsius').append(celsius + 'ºC');
-  $("#min").append(minCelsius + 'ºC');
-  $("#max").append(maxCelsius + 'ºC');
+    switchBtnRight.classList.remove('active-case');
+    switchBtnLeft.classList.add('active-case');
+    activeSwitch.style.left = '0%';
+
+    $('#farenheit').empty();
+    $('#min').empty();
+    $('#max').empty();
+    $('#celsius').append(celsius + 'ºC');
+    $("#min").append(minCelsius + 'ºC');
+    $("#max").append(maxCelsius + 'ºC');
 }
 
 function switchRight() {
-  switchBtnRight.classList.add('active-case');
-  switchBtnLeft.classList.remove('active-case');
-  activeSwitch.style.left = '50%';
+    switchBtnRight.classList.add('active-case');
+    switchBtnLeft.classList.remove('active-case');
+    activeSwitch.style.left = '50%';
 
-  $('#celsius').empty();
-  $('#min').empty();
-  $('#max').empty();
-  $('#farenheit').append(farenheit + 'ºF');
-  $('#min').append(minF + "ºF");
-  $('#max').append(maxF  + "ºF");
+    $('#celsius').empty();
+    $('#min').empty();
+    $('#max').empty();
+    $('#farenheit').append(farenheit + 'ºF');
+    $('#min').append(minF + "ºF");
+    $('#max').append(maxF + "ºF");
 
 }
 
 switchBtnLeft.addEventListener('click', function() {
-  $('#celsius').empty();
-  switchLeft();
+    $('#celsius').empty();
+    switchLeft();
 
 }, false);
 
 switchBtnRight.addEventListener('click', function() {
-  $('#farenheit').empty();
-  switchRight();
+    $('#farenheit').empty();
+    switchRight();
 
 }, false);
 </script>
