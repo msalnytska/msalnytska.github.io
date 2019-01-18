@@ -1,13 +1,13 @@
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
 	*{
 		margin:0;
         padding: 0;
 	}
 	body {
-   max-width: 900px;
+   max-width: 600px;
 }
 .wrapper {
-    max-width: 900px;
+    max-width: 600px;
     margin:0 auto;
 }
 header {
@@ -73,6 +73,103 @@ height: 1500px;
 	margin-left: 30px;
     grid-template-rows: 350px;
     grid-template-columns: 350px;
+    grid-gap: 20px;
+}
+.contact{
+	height: 100px;
+	max-width: 900px;
+}
+.contact__social-list{
+	width: 300px;
+}
+.contact ul{
+	font-size: 30px;
+	 display: flex;
+	 text-align: center;
+	 margin-left: 20px;
+
+	
+}
+.mylogo{
+	visibility:hidden;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 900px){
+	*{
+		margin:0;
+        padding: 0;
+	}
+	body {
+   min-width: 600px;
+   max-width: 900px;
+}
+.wrapper {
+	min-width: 600px;
+    max-width: 900px;
+    margin:0 auto;
+}
+header {
+     height: 400px;
+}
+
+.header-navigation ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.about{
+	position: relative;
+	height: 600px;
+}
+.about h1{
+	font-size: 3em;
+	position: absolute;
+top: 5%;
+left: 5%;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 500px;}
+}
+.about__box{
+max-width: 480px;
+margin: 0;
+padding:0;
+}
+.about__box ul{
+	margin-left: 50px;
+	width: 100%;
+	list-style-type: square;
+	font-weight: bold;
+}
+.about__box__me p{
+	width: 300px;
+	font-size: 1em;
+	text-align: left;
+	padding-left: 30px;
+	margin-top: 30px;
+}
+.about__box__photo{
+	width: 300px;
+	height: 300px;
+	font-size: 1.5em;
+	margin: 150px 0 0 30px;
+	padding: 10px;
+	font-weight: bold;
+}
+.buttons{
+	width: 320px;
+}
+.portfolio{
+margin:0;
+padding: 0;
+height: 800px;
+}
+.portfolio__items{
+	display: grid;
+	margin-left: 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 .contact{
